@@ -1,13 +1,15 @@
 package devices;
 
-import java.util.zip.DataFormatException;
-
 public class Device {
-    String model;
-    String producer;
-    Integer yearOfProduction;
+    public final String model;
+    public final String producer;
+    public final Integer yearOfProduction;
 
-    public String toString() {
-        return producer + " " + model + " " + yearOfProduction;
+    public Device(String model, String producer, Integer yearOfProduction) {
+        this.model = model;
+        this.producer = producer;
+        this.yearOfProduction = yearOfProduction;
     }
+
+
 }

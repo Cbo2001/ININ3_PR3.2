@@ -37,7 +37,7 @@ public class Main {
         kot.takeForAWalk();*/
         Car auto1 = new Car("Fiat", "125p", 1982);
         System.out.println(auto1);
-        Phone telefon1 = new Phone("samsung", "x10", "700x600", "Android");
+        Phone telefon1 = new Phone("samsung", "x10", 2016, "700x600", "Android" );
         System.out.println(telefon1);
 
         /*System.out.println(passat.equals(fiat));

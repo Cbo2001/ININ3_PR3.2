@@ -9,9 +9,8 @@ public class Car extends Device{
     public Double value;
 
     public Car(String producer, String model, Integer yearOfProduction) {
-        this.producer = producer;
-        this.model = model;
-        this.yearOfProduction = yearOfProduction;
+        super(model, producer, yearOfProduction);
+
         this.millage = 0.0;
     }
 
@@ -20,7 +19,16 @@ public class Car extends Device{
         System.out.println("\nAktualny przebieg to: " + this.millage);
     }
 
+    @Override
     public String toString() {
-        return producer + " " + model + " " + yearOfProduction + " " + millage + " "+ color + " "+ fuelType + " "   + value;
+        return "Car{" +
+                "fuelType='" + fuelType + '\'' +
+                ", millage=" + millage +
+                ", color='" + color + '\'' +
+                ", value=" + value +
+                ", model='" + model + '\'' +
+                ", producer='" + producer + '\'' +
+                ", yearOfProduction=" + yearOfProduction +
+                '}';
     }
 }
