@@ -4,6 +4,8 @@ public class Car extends Device{
 
     String fuelType;
     public Double millage;
+
+    String color;
     public Double value;
 
     public Car(String producer, String model, Integer yearOfProduction) {
@@ -19,6 +21,6 @@ public class Car extends Device{
     }
 
     public String toString() {
-        return producer + " " + model + " " + yearOfProduction + " " + millage + " " + value;
+        return producer + " " + model + " " + yearOfProduction + " " + millage + " "+ color + " "+ fuelType + " "   + value;
     }
 }

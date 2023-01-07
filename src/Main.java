@@ -3,15 +3,15 @@ import devices.Phone;
 
 public class Main {
     public static void main(String[] args) {
-        Car passat = new Car("vw", "passat", 2001);
+        /*Car passat = new Car("vw", "passat", 2001);
         passat.millage = 78000.0;
-        passat.value = 12000.0;
+        passat.value = 12000.0;*/
 
 
         Human sebastian = new Human("Sebastian");
         sebastian.setSalary(2000.0);
         System.out.println(sebastian.getSalary());
-        sebastian.setCar(passat);
+       // sebastian.setCar(passat);
         System.out.println("sebastian.getCar=" + sebastian.getCar());
         sebastian.feed();
         System.out.println(sebastian.firstName + sebastian.species);
@@ -22,7 +22,7 @@ public class Main {
 
         System.out.println("Przebieg: " + fiat.millage);
 
-        Animal kot = new Animal("kot");
+       /* Animal kot = new Animal("kot");
         kot.name = "Filemon";
         kot.feed();
         kot.takeForAWalk();
@@ -34,10 +34,13 @@ public class Main {
         kot.takeForAWalk();
         kot.takeForAWalk();
         kot.feed();
-        kot.takeForAWalk();
+        kot.takeForAWalk();*/
+        Car auto1 = new Car("Fiat", "125p", 1982);
+        System.out.println(auto1);
+        Phone telefon1 = new Phone("samsung", "x10", "700x600", "Android");
+        System.out.println(telefon1);
 
-
-        System.out.println(passat.equals(fiat));
+        /*System.out.println(passat.equals(fiat));
         Car ford = new Car("ford", "mondeo", 2015);
         Car ford2 = new Car("ford", "mondeo", 2015);
         System.out.println("Porównuje ford(ford,mondeo,2015) i ford2(ford,mondeo,2015): " + passat.equals(fiat));
@@ -51,7 +54,7 @@ public class Main {
         System.out.println(sebastian);
         System.out.println(passat);
         System.out.println(kot);
-        System.out.println(xiaomi);
+        System.out.println(xiaomi);*/
 
         //System.out.println("Wynik 65659 % 3 = " + 65659 % 3);
     }
