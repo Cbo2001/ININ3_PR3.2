@@ -1,6 +1,6 @@
-import devices.Car;
-import devices.Device;
-import devices.Phone;
+import szurawski.creatures.Human;
+import szurawski.devices.Car;
+import szurawski.devices.Phone;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class Main {
         System.out.println("Przebieg: " + fiat.millage);
         fiat.turnOn();
 
-       /* Animal kot = new Animal("kot");
+       /* szurawski.creatures.Animal kot = new szurawski.creatures.Animal("kot");
         kot.name = "Filemon";
         kot.feed();
         kot.takeForAWalk();

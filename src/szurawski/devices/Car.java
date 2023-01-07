@@ -1,6 +1,6 @@
-package devices;
+package szurawski.devices;
 
-public class Car extends Device{
+public class Car extends Device {
 
     String fuelType;
     public Double millage;

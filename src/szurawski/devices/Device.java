@@ -1,4 +1,4 @@
-package devices;
+package szurawski.devices;
 
 public abstract class Device {
     public final String model;

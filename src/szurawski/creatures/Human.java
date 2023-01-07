@@ -1,13 +1,19 @@
-import devices.Car;
+package szurawski.creatures;
+
+import szurawski.devices.Car;
+import szurawski.devices.Phone;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Human extends Animal {
 
-    String firstName;
+    public String firstName;
     String lastName;
     Car car;
+    Double cash;
+    Phone phone;
+    Animal pet;
 
     public Human(String firstName){
         super("homo sapiens");
@@ -16,10 +22,9 @@ public class Human extends Animal {
         this.weight = 70.0;
     }
 
-    Animal pet;
 
-    private Double salary;
-    private Car auto;
+     Double salary;
+     Car auto;
 
 
     public Double getSalary() {

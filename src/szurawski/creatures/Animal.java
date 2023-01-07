@@ -1,5 +1,7 @@
+package szurawski.creatures;
+
 public class Animal {
-    String species;
+    public String species;
     String name;
     public Double weight;
     Boolean alive;

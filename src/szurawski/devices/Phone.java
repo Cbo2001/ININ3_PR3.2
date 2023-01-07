@@ -1,4 +1,4 @@
-package devices;
+package szurawski.devices;
 
 public class Phone extends Device{
 
