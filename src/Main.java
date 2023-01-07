@@ -1,4 +1,5 @@
 import devices.Car;
+import devices.Device;
 import devices.Phone;
 
 public class Main {
@@ -21,6 +22,7 @@ public class Main {
         fiat.millage = 312321.5;
 
         System.out.println("Przebieg: " + fiat.millage);
+        fiat.turnOn();
 
        /* Animal kot = new Animal("kot");
         kot.name = "Filemon";
@@ -39,6 +41,8 @@ public class Main {
         System.out.println(auto1);
         Phone telefon1 = new Phone("samsung", "x10", 2016, "700x600", "Android" );
         System.out.println(telefon1);
+        telefon1.turnOn();
+
 
         /*System.out.println(passat.equals(fiat));
         Car ford = new Car("ford", "mondeo", 2015);

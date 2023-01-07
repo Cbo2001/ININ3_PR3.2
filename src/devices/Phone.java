@@ -23,9 +23,7 @@ public class Phone extends Device{
         this.OS = OS;
     }
 
-    public void turnOn() {
-        System.out.println("Turning on phone...1%...30%...80%...99%...Phone ready!");
-    }
+
 
     public void mute() {
         System.out.println("Phone muted!");
@@ -34,4 +32,18 @@ public class Phone extends Device{
     public void installAnApp(String app) {
         System.out.println("App: " + app + ", succesfully installed!");
     }
+
+    @Override
+    public void turnOn() {
+        System.out.println("wciskam przycisk");
+        System.out.println("czekam");
+        System.out.println("czekam");
+        System.out.println("czekam");
+        System.out.println("widzę logo");
+        System.out.println("czekam");
+        System.out.println("działa");
+
+
+    }
+
 }
