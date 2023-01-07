@@ -1,9 +1,8 @@
 package devices;
 
-public class Car {
-    public String producer;
-    public String model;
-    public Integer yearOfProduction;
+public class Car extends Device{
+
+    String fuelType;
     public Double millage;
     public Double value;
 

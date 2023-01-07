@@ -6,19 +6,20 @@ public class Main {
         Car passat = new Car("vw", "passat", 2001);
         passat.millage = 78000.0;
         passat.value = 12000.0;
-        System.out.println(passat.producer);
-        System.out.println(passat.model);
-        System.out.println(passat.yearOfProduction);
 
-        Human andrzej = new Human();
-        andrzej.setSalary(2000.0);
-        System.out.println(andrzej.getSalary());
-        andrzej.setCar(passat);
-        System.out.println("andrzej.getCar=" + andrzej.getCar());
+
+        Human sebastian = new Human("Sebastian");
+        sebastian.setSalary(2000.0);
+        System.out.println(sebastian.getSalary());
+        sebastian.setCar(passat);
+        System.out.println("sebastian.getCar=" + sebastian.getCar());
+        sebastian.feed();
+        System.out.println(sebastian.firstName + sebastian.species);
+        System.out.println(sebastian.weight);
 
         Car fiat = new Car("fiat", "bravo", 2010);
         fiat.millage = 312321.5;
-        System.out.println("Model auta: " + fiat.model);
+
         System.out.println("Przebieg: " + fiat.millage);
 
         Animal kot = new Animal("kot");
@@ -44,10 +45,10 @@ public class Main {
         System.out.println(ford);
         System.out.println(ford2);
         Phone xiaomi = new Phone("Xiaomi", "13 Pro", 6.0, "Android 12");
-        andrzej.pet = kot;
+        sebastian.pet = kot;
 
         System.out.println();
-        System.out.println(andrzej);
+        System.out.println(sebastian);
         System.out.println(passat);
         System.out.println(kot);
         System.out.println(xiaomi);

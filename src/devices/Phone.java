@@ -1,20 +1,20 @@
 package devices;
 
-public class Phone {
-    String producer;
-    String model;
+public class Phone extends Device{
+
+
     Double screenSize;
-    String androidiOS;
+    String OS;
 
     public String toString() {
-        return producer + " " + model + " " + screenSize + " " + androidiOS;
+        return producer + " " + model + " " + screenSize + " " + OS;
     }
 
     public Phone(String producer, String model, Double screenSize, String androidiOS) {
         this.producer = producer;
         this.model = model;
         this.screenSize = screenSize;
-        this.androidiOS = androidiOS;
+        this.OS = androidiOS;
     }
 
     public void turnOn() {
